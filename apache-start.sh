@@ -28,7 +28,7 @@ else
 	chown -R www-data:www-data ${WORDPRESS_PTH}
 	chmod -R 755 ${WORDPRESS_PTH}
 	#Enable module
-	a2enmod rewrite && a2enmod headers && a2enmod mime && a2enmod mime_magic && a2enmod php5 && a2enmod ssl && service apache2 restart && service apache2 stop
+	service apache2 restart && service apache2 stop
 	#/opt/semantic-platform/database/mysql/load.sh
 	
 	##--skip-external-dependencies per non usare compoeser se si aggiunge
