@@ -26,6 +26,7 @@ vim \
 php-pear \
 php-opcache \
 libapache2-mod-php \
+php-mbstring \
 php-gd
 
 RUN a2enmod rewrite && a2enmod headers && a2enmod mime && a2enmod mime_magic && a2enmod ssl && service apache2 restart 
